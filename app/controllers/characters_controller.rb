@@ -5,19 +5,19 @@ class CharactersController < ProtectedController
 
   # GET /characters
   def index
-    @characters = Character.all
+    @characters = current_user.characters.all
 
     render json: @characters
   end
 
   # GET /characters/1
-  def show
-    render json: @character
-  end
+  # def show
+  #   render json: @character
+  # end
 
   # POST /characters
   def create
-    @character = Character.new(character_params)
+    @character = current_user.characters.build(character_params)
 
     if @character.save
       render json: @character, status: :created, location: @character
@@ -44,7 +44,7 @@ class CharactersController < ProtectedController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_character
-    @character = Character.find(params[:id])
+    @character = current_user.characters.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.
