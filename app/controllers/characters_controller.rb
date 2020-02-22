@@ -6,6 +6,7 @@ class CharactersController < ProtectedController
   # GET /characters
   def index
     @characters = current_user.characters.all
+    # @characters = Character.all
 
     render json: @characters
   end
