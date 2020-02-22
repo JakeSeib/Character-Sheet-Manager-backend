@@ -5,16 +5,16 @@ In order to get a satisfactory score, by the time you present your project, you
 
 ### Deployment
 Be deployed online, where the rest of the world can access it.
-1.  [ ]  Host on your public Github page, not Github Enterprise.
-1.  [ ]  Deploy client application on GH pages.
-1.  [ ]  Deploy server application on Heroku.
+1.  [x]  Host on your public Github page, not Github Enterprise.
+1.  [x]  Deploy client application on GH pages.
+1.  [x]  Deploy server application on Heroku.
 
 ### Version Control
 Demonstrate using version control by:
-1.  [ ]  Sharing your work through a git repository hosted on Github.
-1.  [ ]  Making frequent, cohesive commits dating back to the **first day**
+1.  [x]  Sharing your work through a git repository hosted on Github.
+1.  [x]  Making frequent, cohesive commits dating back to the **first day**
 of the project week.
-1.  [ ]  1 commit on the first day of project week on both repos.
+1.  [x]  1 commit on the first day of project week on both repos.
 1.  [ ]  At least 1 commit every day during project week (not necessarily on both repos).
 
 ### Documentation
@@ -36,14 +36,14 @@ Your back-end repo's README should also have
 1.  [ ] Link to Entity Relationship Diagram (ERD).
 
 ### Auth Specifications
-1.  [ ] Signup with email, password, and password confirmation.
-1.  [ ] Login with email and password.
-1.  [ ] Logout when logged in.
-1.  [ ] Change password with current and new password.
-1.  [ ] Signup and Signin must only be available to not signed in users.
-1.  [ ] Logout and Change password must only be available to signed in users.
-1.  [ ] Give feedback to the user after each action's success or failure.
-1.  [ ] All forms must clear after submit success and user sign-out
+1.  [x] Signup with email, password, and password confirmation.
+1.  [x] Login with email and password.
+1.  [x] Logout when logged in.
+1.  [x] Change password with current and new password.
+1.  [x] Signup and Signin must only be available to not signed in users.
+1.  [x] Logout and Change password must only be available to signed in users.
+1.  [x] Give feedback to the user after each action's success or failure.
+1.  [x] All forms must clear after submit success and user sign-out
     - [ ] (Optional) Reset form to initial state on failure
 
 ### Client Specifications
@@ -62,10 +62,10 @@ Your back-end repo's README should also have
 
 
 ### API Specifications
-1.  [ ] Build an API using Ruby on Rails and Postgresql.
-1.  [ ] Create at least 4 RESTful routes for handling GET, POST, PUT/PATCH, and DELETE requests.
-1.  [ ] Any actions which change data must be authenticated and the data must be "owned" by the user performing the change.
-1.  [ ] Have at least 1 resource that has a relationship to User
+1.  [x] Build an API using Ruby on Rails and Postgresql.
+1.  [x] Create at least 4 RESTful routes for handling GET, POST, PUT/PATCH, and DELETE requests.
+1.  [x] Any actions which change data must be authenticated and the data must be "owned" by the user performing the change.
+1.  [x] Have at least 1 resource that has a relationship to User
 
 ### DO NOT!!
 Your app **must not**:
