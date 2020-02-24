@@ -5,7 +5,11 @@ class CharactersController < ProtectedController
 
   # GET /characters
   def index
-    @characters = current_user.characters.all
+    char_array = current_user.characters.all
+    @characters = {}
+    char_array.each do |char|
+      @characters[char.id] = char
+    end
 
     render json: @characters
   end
