@@ -1,1 +1,1 @@
-![Users-Characters ERD](https://i.imgur.com/LrCxqun.png)
+![Character Manager ERD](https://i.imgur.com/DrtKVWu.png)
