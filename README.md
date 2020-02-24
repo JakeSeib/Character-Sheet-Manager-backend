@@ -8,10 +8,6 @@ Sign in via the [client](https://jakeseib.github.io/Character-Sheet-Manager-clie
 
 Currently, only aspects for characters are implemented, and characters have a maximum of 5 aspects.
 
-### Further documentation
-
-For more details on the app, as well as documentation on planning, see also the [client repository](https://github.com/JakeSeib/Character-Sheet-Manager-client), the [deployed API](https://floating-gorge-61213.herokuapp.com/) (not very interesting to view in the browser), and the [planning directory](https://github.com/JakeSeib/Character-Sheet-Manager-backend/tree/master/planning), which includes wireframes, an ERD, and user stories used in planning.
-
 ### Technologies Used
 
 - **Ruby on Rails**: Backend RESTful API
@@ -23,6 +19,27 @@ For more details on the app, as well as documentation on planning, see also the 
 - **Heroku**: API deployment/hosting
 - **Grunt**: Frontend deployment to Github pages
 - **GitHub**: Version control
+
+### API End Points
+
+| Verb   | URI Pattern       | Controller#Action   |
+|--------|-------------------|---------------------|
+| POST   | `/sign-up`        | `users#signup`      |
+| POST   | `/sign-in`        | `users#signin`      |
+| DELETE | `/sign-out`       | `users#signout`     |
+| PATCH  | `/change-password`| `users#changepw`    |
+| GET    | `/characters`     | `characters#index`  |
+| POST   | `/characters`     | `characters#create` |
+| PATCH  | `/characters/:id` | `characters#update` |
+| DELETE | `/characters/:id` | `characters#destroy`|
+
+Production url: 'https://floating-gorge-61213.herokuapp.com/'
+
+All data returned from API actions is formatted as JSON.
+
+### Further documentation
+
+For more details on the app, as well as documentation on planning, see also the [client repository](https://github.com/JakeSeib/Character-Sheet-Manager-client), and the [planning directory](https://github.com/JakeSeib/Character-Sheet-Manager-backend/tree/master/planning), which includes wireframes, an ERD, and user stories used in planning.
 
 ### Development Process
 
