@@ -50,6 +50,6 @@ Client
 1.  [x] Update single resource (curl then web app)
 
 ### Final Touches
-1.  [ ] README
+1.  [x] README
 2.  [ ] Troubleshoot/Debug
 3.  [ ] Style
