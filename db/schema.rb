@@ -38,14 +38,6 @@ ActiveRecord::Schema.define(version: 2020_02_25_155008) do
     t.index ["user_id"], name: "index_characters_on_user_id"
   end
 
-  create_table "examples", force: :cascade do |t|
-    t.text "text", null: false
-    t.bigint "user_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_examples_on_user_id"
-  end
-
   create_table "skills", force: :cascade do |t|
     t.string "name", null: false
     t.datetime "created_at", null: false
@@ -66,5 +58,4 @@ ActiveRecord::Schema.define(version: 2020_02_25_155008) do
   add_foreign_key "character_skills", "characters"
   add_foreign_key "character_skills", "skills"
   add_foreign_key "characters", "users"
-  add_foreign_key "examples", "users"
 end
