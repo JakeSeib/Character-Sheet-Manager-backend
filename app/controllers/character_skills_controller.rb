@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-class CharacterSkillsController < ApplicationController
+class CharacterSkillsController < ProtectedController
   before_action :set_character_skill, only: %i[show update destroy]
 
   # GET /character_skills
   def index
-    @character_skills = CharacterSkill.all
+    @character_skills = current_user.character_skills.all
 
     render json: @character_skills
   end
@@ -17,7 +17,7 @@ class CharacterSkillsController < ApplicationController
 
   # POST /character_skills
   def create
-    @character_skill = CharacterSkill.new(character_skill_params)
+    @character_skill = current_user.character_skills.build(character_skill_params)
 
     if @character_skill.save
       render json: @character_skill, status: :created, location: @character_skill
@@ -44,7 +44,7 @@ class CharacterSkillsController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_character_skill
-    @character_skill = CharacterSkill.find(params[:id])
+    @character_skill = current_user.character_skills.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.
