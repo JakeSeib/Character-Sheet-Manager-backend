@@ -3,5 +3,6 @@
 class User < ApplicationRecord
   include Authentication
   has_many :examples
-  has_many :characters
+  has_many :characters, dependent: :destroy
+  has_many :character_skills, through: :characters
 end
