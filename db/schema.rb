@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 2020_02_25_155008) do
   end
 
   create_table "skills", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
