@@ -4,6 +4,6 @@ class CharacterSkillSerializer < ActiveModel::Serializer
   has_one :skill
 
   def skill_name
-    skill.name.capitalize()
+    object.skill.name.capitalize()
   end
 end
