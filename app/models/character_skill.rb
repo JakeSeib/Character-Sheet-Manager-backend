@@ -8,4 +8,8 @@ class CharacterSkill < ApplicationRecord
   def skill_name
     skill.name.capitalize
   end
+
+  def skill_id
+    skill.id
+  end
 end
