@@ -15,9 +15,9 @@ class CharactersController < ProtectedController
   end
 
   # GET /characters/1
-  # def show
-  #   render json: @character
-  # end
+  def show
+    render json: @character
+  end
 
   # POST /characters
   def create

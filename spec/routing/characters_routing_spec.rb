@@ -7,10 +7,9 @@ RSpec.describe CharactersController, type: :routing do
       expect(:get => "/characters").to route_to("characters#index")
     end
 
-    # currently not an implemented route; may be added later
-    # it "routes to #show" do
-    #   expect(:get => "/characters/1").to route_to("characters#show", :id => "1")
-    # end
+    it "routes to #show" do
+      expect(:get => "/characters/1").to route_to("characters#show", :id => "1")
+    end
 
 
     it "routes to #create" do
