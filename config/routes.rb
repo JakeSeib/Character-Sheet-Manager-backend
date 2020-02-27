@@ -3,7 +3,7 @@
 Rails.application.routes.draw do
   # RESTful routes
   resources :characters, except: %i[new edit]
-  resources :skills, except: %i[new edit]
+  resources :skills, except: %i[new edit create update destroy]
   resources :character_skills, except: %i[new edit]
 
   # Custom routes
