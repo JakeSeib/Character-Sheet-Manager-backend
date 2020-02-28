@@ -15,30 +15,32 @@ class SkillsController < ApplicationController
     render json: @skill
   end
 
+  # Currently disabled routes
+
   # POST /skills
-  def create
-    @skill = Skill.new(skill_params)
-
-    if @skill.save
-      render json: @skill, status: :created, location: @skill
-    else
-      render json: @skill.errors, status: :unprocessable_entity
-    end
-  end
-
-  # PATCH/PUT /skills/1
-  def update
-    if @skill.update(skill_params)
-      render json: @skill
-    else
-      render json: @skill.errors, status: :unprocessable_entity
-    end
-  end
-
-  # DELETE /skills/1
-  def destroy
-    @skill.destroy
-  end
+  # def create
+  #   @skill = Skill.new(skill_params)
+  #
+  #   if @skill.save
+  #     render json: @skill, status: :created, location: @skill
+  #   else
+  #     render json: @skill.errors, status: :unprocessable_entity
+  #   end
+  # end
+  #
+  # # PATCH/PUT /skills/1
+  # def update
+  #   if @skill.update(skill_params)
+  #     render json: @skill
+  #   else
+  #     render json: @skill.errors, status: :unprocessable_entity
+  #   end
+  # end
+  #
+  # # DELETE /skills/1
+  # def destroy
+  #   @skill.destroy
+  # end
 
   private
 
