@@ -48,6 +48,28 @@ Production url: 'https://floating-gorge-61213.herokuapp.com/'
 
 Routes for characters and character_skills require a token, and only work for characters owned by the associated user. All data returned from API actions is formatted as JSON.
 
+## Set Up
+### Dependencies
+-   [rails-api-template](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template)
+
+### Local Environment
+1. Install dependencies (`bundle install`)
+2. Create a .env for sensitive settings (`touch .env`)
+3. Generate new development and test secrets (`bundle exec rails secret`)
+4. Store secrets in .env with keys as `SECRET_KEY_BASE_<DEVELOPMENT|TEST>` respectively (development only if intending to deploy your own API)
+
+### Local Database
+```
+- bin/rails db:drop (if it already exists)
+- bin/rails db:create
+- bin/rails db:migrate
+- bin/rails db:seed
+- bin/rails db:examples
+```
+
+### Launch Local Server
+Run `bin/rails server` or `bundle exec rails server`
+
 ### Further documentation
 
 For more details on the app, as well as documentation on planning, see also the [client repository](https://github.com/JakeSeib/Character-Sheet-Manager-client), and the [planning directory](https://github.com/JakeSeib/Character-Sheet-Manager-backend/tree/master/planning), which includes wireframes, an ERD, and user stories used in planning.
